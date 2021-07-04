@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-margin-top: 70px;
 }
 
 html {
@@ -125,10 +126,15 @@ nav .navbar-links ul {
 nav .navbar-links ul li {
     display: inline-block;
     margin-left: 50px;
+}
+
+nav .navbar-links ul li a {
+    text-decoration: none;
+    color: var(--highlighter);
     transition: color 0.3s;
 }
 
-nav .navbar-links ul li:hover {
+nav .navbar-links ul li a:hover {
     color: var(--primary-text);
     cursor: pointer;
 }
