@@ -33,7 +33,7 @@ html {
 body {
     background-color: var(--background);
     display: grid;
-    /* grid-template-rows: repeat(2, 100vh) repeat(3, max-content); */
+    overflow-x: hidden;
     grid-template-rows: repeat(6, max-content);
     grid-template-columns: 1fr 1065px 1fr;
     grid-template-areas: ". header ."
@@ -230,7 +230,7 @@ nav .navbar-links ul li a:hover {
 .introduction-section {
     grid-area: introduction-section;
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: "introduction-text code-lottie";
     color: var(--primary-text);
     position: relative;
@@ -246,7 +246,6 @@ nav .navbar-links ul li a:hover {
 
 .introduction-section .code-lottie lottie-player {
     position: absolute;
-    right: -80px;
 }
 
 .introduction-section .introduction-text .bio {
