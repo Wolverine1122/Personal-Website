@@ -7,6 +7,7 @@
     --card: #1E293C;
     --accent: #666D7A;
     --highlighter: #00B894;
+    --darker-highlighter: #00745d;
     --primary-text: #FAFAFA;
     --secondary-text: #ACB1B8;
 }
@@ -178,7 +179,7 @@ nav .navbar-links ul li a:hover {
 .header-img .profile-img {
     position: relative;
     width: 201px;
-    height: 231px;
+    height: 231.57px;
     border-radius: 10px;
     background-image: url(../resources/pic/profile\ pic.png);
     background-size: cover;
@@ -230,7 +231,22 @@ nav .navbar-links ul li a:hover {
     grid-area: introduction-section;
     display: grid;
     grid-template-columns: 5fr 2fr;
+    grid-template-areas: "introduction-text code-lottie";
     color: var(--primary-text);
+    position: relative;
+}
+
+.introduction-section .introduction-text {
+    grid-area: introduction-text;
+}
+
+.introduction-text .code-lottie {
+    grid-area: code-lottie;
+}
+
+.introduction-section .code-lottie lottie-player {
+    position: absolute;
+    right: -80px;
 }
 
 .introduction-section .introduction-text .bio {
@@ -428,6 +444,18 @@ nav .navbar-links ul li a:hover {
     grid-area: project-3;
 }
 
+.project1-link {
+    grid-area: project1-link;
+}
+
+.project2-link {
+    grid-area: project2-link;
+}
+
+.project3-link {
+    grid-area: project3-link;
+}
+
 .project-img {
     height: 100%;
     width: auto;
@@ -479,7 +507,7 @@ nav .navbar-links ul li a:hover {
 }
 
 .contact-section .button:hover {
-    background-color: #00745d;
+    background-color: var(--darker-highlighter);
 }
 
 /*   

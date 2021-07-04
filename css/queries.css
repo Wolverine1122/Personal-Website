@@ -1,0 +1,107 @@
+@media screen and (max-width: 1150px) {
+    body {
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+    h1 {
+        font-size: 250%;
+    }
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    body {
+        grid-template-columns: 1fr 900px 1fr;
+    }
+    h1 {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    body {
+        grid-template-columns: 1fr 800px 1fr;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    body {
+        grid-template-columns: 1fr 700px 1fr;
+    }
+    html {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 110%;
+    }
+    
+    .header-img .profile-img {
+        width: 175px;
+        height: 201.61px;
+    }
+    .introduction-section .code-lottie lottie-player {
+        display: none;
+    }
+
+    .introduction-section .introduction-text .bio {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:735px) {
+    body {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+
+    h1 {
+        font-size: 140%;
+    }
+
+    h3 {
+        font-size: 105%;
+    }
+
+    .header-img .profile-img {
+        width: 150px;
+        height: 172.81px;
+    }
+    .introduction-section .code-lottie lottie-player {
+        display: unset;
+    }
+
+    .introduction-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px auto;
+        grid-template-areas: "code-lottie"
+                             "introduction-text";
+    }
+    
+    .introduction-section .code-lottie lottie-player {
+        top: -20%;
+        left: 21%;
+    }
+    
+    .introduction-section .introduction-text .bio {
+        width: 100%;
+    }
+    
+    .projects-section .cards-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px repeat(2, max-content) 50px 200px repeat(2, max-content);
+        grid-template-areas: "project-1            project-2"
+                             "project1-description project2-description"
+                             "project1-link        project2-link"
+                             ". ."
+                             "project-3 ."
+                             "project3-description ."
+                             "project3-link .";
+    }
+    
+    .cards-row p {
+        width: 100%;
+    }
+}
