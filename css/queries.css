@@ -73,6 +73,10 @@
         display: unset;
     }
 
+    .content .tail-of-the-line {
+        width: 95%;
+    }
+
     .introduction-section {
         grid-template-columns: 1fr;
         grid-template-rows: 250px auto;

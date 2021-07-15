@@ -312,14 +312,27 @@ nav .navbar-links ul li a:hover {
 
 .content ul {
     font-size: 85%;
-    margin-top: 15px;
-    margin-bottom: 5%;
+    margin: 15px 0 5% 15px;
     list-style-type: none;
     color: var(--secondary-text);
 }
 
+.content ul li {
+    line-height: 28px;
+}
+  
+.content ul li::before {
+    content: "\2022";
+    color: var(--highlighter);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 .content .tail-of-the-line {
     margin-bottom: 0;
+    width: 80%;
 }
 
 .education-section,
